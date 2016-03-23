@@ -1,17 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class Card : MonoBehaviour {
 
 	// Use this for initialization
-
-	public Vector3 location;
-
-	void Awake(){
-
-		location = this.transform.position;
-	}
-
 	void Start () {
 	
 	}
@@ -19,8 +11,5 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
-
-	public virtual void UpdateTurn(){
 	}
 }

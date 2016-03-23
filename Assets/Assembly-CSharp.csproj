@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Alt\AIEnemy.cs" />
+     <Compile Include="Assets\Scripts\Alt\ActionCard.cs" />
+     <Compile Include="Assets\Scripts\Alt\Card.cs" />
      <Compile Include="Assets\Scripts\Alt\GameManager.cs" />
      <Compile Include="Assets\Scripts\Alt\Player.cs" />
      <Compile Include="Assets\Scripts\Alt\Tile.cs" />

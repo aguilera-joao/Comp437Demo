@@ -26,4 +26,10 @@ public class Tile : MonoBehaviour {
 
 		GetComponent<Renderer> ().material.color = Color.white;
 	}
+
+	void OnMouseDown(){
+
+		GameManager.instance.movePlayer (this);
+	}
+
 }
