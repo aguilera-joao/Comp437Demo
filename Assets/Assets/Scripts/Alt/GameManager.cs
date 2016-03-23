@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject TilePrefab;
 
-	public int mapSize = 11;
+	public int mapSize = 12;
 
 	List <List<Tile>> map = new List<List<Tile>>();
 
