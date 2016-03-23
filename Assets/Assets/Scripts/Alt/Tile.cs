@@ -14,4 +14,16 @@ public class Tile : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnMouseEnter(){
+
+		GetComponent<Renderer> ().material.color = Color.cyan;
+
+		Debug.Log ("Position x:" + this.gridPosition.x + "Position y: " + this.gridPosition.y);
+	}
+
+	void OnMouseExit(){
+
+		GetComponent<Renderer> ().material.color = Color.white;
+	}
 }

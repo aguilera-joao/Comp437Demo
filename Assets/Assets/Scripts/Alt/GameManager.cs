@@ -5,15 +5,24 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour {
 
 	public GameObject TilePrefab;
+	public GameObject UserPrefab;
 
 	public int mapSize = 12;
 
 	List <List<Tile>> map = new List<List<Tile>>();
+	List <Player> users = new List<Player> ();
+
+	private int playerIndex = 0; 
+
+
+	public void nextTurn() {
+	}
 
 	// Use this for initialization
 	void Start () {
 	
 		generateMap ();
+		generateUsers ();
 	}
 	
 	// Update is called once per frame
@@ -34,5 +43,18 @@ public class GameManager : MonoBehaviour {
 			}
 			map.Add (row);
 		}
+			
 	}
+
+	void generateUsers(){
+
+		User player, enemy;
+
+		player = ((GameObject)Instantiate(UserPrefab, new Vector3(0 - Mathf.Floor(mapSize/2),1.36f, -0+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<User>();
+		enemy  = ((GameObject)Instantiate(UserPrefab, new Vector3((mapSize -1) - Mathf.Floor(mapSize/2),1.36f, -(mapSize - 1)+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<User>(); 
+		 
+		users.Add(player);
+	} 
+
+
 }
