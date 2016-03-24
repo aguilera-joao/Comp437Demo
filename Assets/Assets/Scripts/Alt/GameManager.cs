@@ -19,14 +19,12 @@ public class GameManager : MonoBehaviour {
 
 	public void nextTurn() {
 
-		//playerIndex = playerIndex + 1 < users.Count ? playerIndex++ : 0;
-
 		if (playerIndex + 1 < users.Count) {
 			playerIndex++;
 		} else {
 
 			playerIndex = 0;
-		}
+		} 
 	}
 
 	public void movePlayer(Tile destination){
