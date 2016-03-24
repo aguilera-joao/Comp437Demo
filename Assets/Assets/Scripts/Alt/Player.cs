@@ -6,6 +6,10 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 
 	public Vector3 location;
+	public bool moving = false;
+
+	//attributes
+	public int health;
 
 	void Awake(){
 

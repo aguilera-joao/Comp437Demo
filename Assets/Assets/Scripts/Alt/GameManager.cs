@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	List <List<Tile>> map = new List<List<Tile>>();
 	List <Player> users = new List<Player> ();
 
-	private int playerIndex = 0; 
+	public int playerIndex = 0; 
 	private float heightLocation = 1.36f;
 
 	public void nextTurn() {
@@ -76,12 +76,17 @@ public class GameManager : MonoBehaviour {
 
 		player = ((GameObject)Instantiate(UserPrefab, new Vector3(0 - Mathf.Floor(mapSize/2),heightLocation, -0+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<User>();
 		enemy  = ((GameObject)Instantiate(UserPrefab, new Vector3((mapSize -1) - Mathf.Floor(mapSize/2), heightLocation, -(mapSize - 1)+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<User>(); 
-		enemyAI = ((GameObject)Instantiate(AIPrefab, new Vector3((mapSize -3) - Mathf.Floor(mapSize/2), heightLocation, -(mapSize - 3)+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<AIEnemy>(); 
+		enemyAI = ((GameObject)Instantiate(AIPrefab, new Vector3((mapSize -3) - Mathf.Floor(mapSize/2), .5f, -(mapSize - 3)+ Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<AIEnemy>(); 
 		 
 		users.Add(player);
 		users.Add (enemy);
 		users.Add (enemyAI);
 	} 
+
+	void OnClick() {
+
+		Debug.Log ("The button has been clicked");
+	}
 
 
 

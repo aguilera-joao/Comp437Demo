@@ -17,16 +17,14 @@ public class User : Player {
 
 	public override void UpdateTurn () {
 
-		Debug.Log ("I am being called");
-
-		if (Vector3.Distance (location, transform.position) > 0.1f) {
+		if (Vector3.Distance (location, transform.position) > 0.2f) {
 
 			transform.position += (location - transform.position).normalized * speed * Time.deltaTime;
 
-			if (Vector3.Distance (location, transform.position) <= 0.1f) {
+			if (Vector3.Distance (location, transform.position) <= 0.2f) {
 
 				transform.position = location;
-				GameManager.instance.nextTurn ();
+				//GameManager.instance.nextTurn ();
 			}
 		}
 

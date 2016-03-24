@@ -6,7 +6,15 @@ public class AIEnemy : Player {
 	// Use this for initialization
 
 	public float speed = 8.0f; 
-	public float height = 1.36f;
+	public float height = 0.5f;
+
+	void Awake(){
+
+
+	
+	}
+
+
 
 	void Start () {
 	
@@ -20,6 +28,7 @@ public class AIEnemy : Player {
 	public override void UpdateTurn () {
 
 
+		location = new Vector3 (location.x, height, location.z);
 
 		if (Vector3.Distance (location, transform.position) > 0.1f) {
 
@@ -28,7 +37,7 @@ public class AIEnemy : Player {
 			if (Vector3.Distance (location, transform.position) <= 0.1f) {
 
 				transform.position = location;
-				GameManager.instance.nextTurn ();
+				//GameManager.instance.nextTurn ();
 			}
 		} else {
 
