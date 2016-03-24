@@ -49,7 +49,9 @@
      <Compile Include="Assets\Scripts\Alt\ActionCard.cs" />
      <Compile Include="Assets\Scripts\Alt\Card.cs" />
      <Compile Include="Assets\Scripts\Alt\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Alt\Network\NetworkManager.cs" />
+     <Compile Include="Assets\Scripts\Alt\Network\Client\SetUpLocalPlayer.cs" />
+     <Compile Include="Assets\Scripts\Alt\Network\Server\LevelSpawner.cs" />
+     <Compile Include="Assets\Scripts\Alt\Network\Server\Server.cs" />
      <Compile Include="Assets\Scripts\Alt\Player.cs" />
      <Compile Include="Assets\Scripts\Alt\Tile.cs" />
      <Compile Include="Assets\Scripts\Alt\User.cs" />

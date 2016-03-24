@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+
+public class Player : NetworkBehaviour {
 
 	// Use this for initialization
 
@@ -23,7 +25,12 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		if (!isLocalPlayer) {
+
+			return;
+		}
 	}
+
 
 	public virtual void UpdateTurn(){
 	}

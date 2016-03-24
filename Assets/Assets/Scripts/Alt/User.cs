@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 public class User : Player {
 
 	public float speed = 8.0f;
@@ -29,5 +28,16 @@ public class User : Player {
 		}
 
 		base.UpdateTurn ();
+	}
+
+	public void movePlayer(Tile destination){
+
+		location = destination.transform.position + 1.36f * Vector3.up;
+	
+	}
+
+	public override void OnStartLocalPlayer(){
+	
+		GetComponent<Renderer> ().material.color = Color.cyan;
 	}
 }
