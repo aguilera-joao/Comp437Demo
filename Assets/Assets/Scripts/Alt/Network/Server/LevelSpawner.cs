@@ -11,14 +11,6 @@ public class LevelSpawner : NetworkBehaviour {
 	public List <List<Tile>> map = new List<List<Tile>>();
 	public int mapSize = 13;
 
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	public override void OnStartServer(){
 
@@ -32,7 +24,7 @@ public class LevelSpawner : NetworkBehaviour {
 				tile.gridPosition = new Vector2 (i, j);
 				row.Add (tile);
 
-			//	NetworkServer.Spawn (tile);
+				//NetworkServer.Spawn (tile);
 
 			}
 			map.Add (row);
