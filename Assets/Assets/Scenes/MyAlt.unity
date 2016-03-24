@@ -399,6 +399,38 @@ MonoBehaviour:
   moving: 0
   health: 0
   speed: 8
+--- !u!114 &543721812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543721806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 26
+    i1: 109
+    i2: 106
+    i3: 81
+    i4: 140
+    i5: 242
+    i6: 116
+    i7: 60
+    i8: 25
+    i9: 18
+    i10: 70
+    i11: 55
+    i12: 139
+    i13: 215
+    i14: 177
+    i15: 82
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &591707442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1375,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 0}
+  m_PlayerPrefab: {fileID: 543721806}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: 
