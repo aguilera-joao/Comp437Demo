@@ -30,6 +30,7 @@ public class Tile : MonoBehaviour {
 	void OnMouseDown(){
 
 		GameManager.instance.movePlayer (this);
+		GameManager.instance.users [GameManager.instance.playerIndex].currentGridPosition = gridPosition;
 	}
 
 }

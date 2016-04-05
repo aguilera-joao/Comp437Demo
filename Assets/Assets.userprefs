@@ -1,13 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Alt/Network/NetworkManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Alt/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Alt/Tile.cs" Line="35" Column="2" />
-      <File FileName="Assets/Scripts/Alt/Player.cs" Line="12" Column="20" />
-      <File FileName="Assets/Scripts/Alt/User.cs" Line="27" Column="7" />
-      <File FileName="Assets/Scripts/Alt/AIEnemy.cs" Line="37" Column="43" />
-      <File FileName="Assets/Scripts/Alt/GameManager.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/Alt/Network/NetworkManager.cs" Line="28" Column="2" />
+      <File FileName="Assets/Scripts/Alt/GameManager.cs" Line="55" Column="21" />
+      <File FileName="Assets/Scripts/Alt/User.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Alt/Tile.cs" Line="33" Column="100" />
+      <File FileName="../../../../MultiplayerTutorial/Assets/Scripts/NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="../../../../TutorialTacticsNetworking/Assets/scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="../../../../TutorialTacticsNetworking/Assets/scripts/PrefabHolder.cs" Line="1" Column="1" />
+      <File FileName="../../../../TutorialTacticsNetworking/Assets/scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Alt/Player.cs" Line="10" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

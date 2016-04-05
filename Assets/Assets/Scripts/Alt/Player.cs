@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 
 	public Vector3 location;
 	public bool moving = false;
+	public Vector2 currentGridPosition;
 
 	//attributes
 	public int health;

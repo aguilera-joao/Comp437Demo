@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 	public int mapSize = 12;
 
 	List <List<Tile>> map = new List<List<Tile>>();
-	List <Player> users = new List<Player> ();
+	public List <Player> users = new List<Player> ();
 
 	public int playerIndex = 0; 
 	private float heightLocation = 1.36f;
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
 	public void movePlayer(Tile destination){
 
 		users [playerIndex].location = destination.transform.position + heightLocation * Vector3.up;
+		//Debug.Log("Player gridLocation is ("+users[playerIndex].currentGridPosition.x + "," + users[playerIndex].currentGridPosition.y + ")");
 	}
 
 	void Awake() {
