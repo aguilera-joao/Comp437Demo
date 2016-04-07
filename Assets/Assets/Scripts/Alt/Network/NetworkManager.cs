@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NetworkManager : MonoBehaviour {
+public class NetworkManager : MonoBehaviour
+{
 
 	private const string gameName = "Game Name";
 	private const string roomName = "Room name";
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 	
 	}
 	

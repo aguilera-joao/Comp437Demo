@@ -1,32 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class User : Player {
+public class User : Player
+{
 
 	public float speed = 8.0f;
+    public Vector3 currentPosition;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update ()
+    {
 	}
 
-	public override void UpdateTurn () {
-
+	public override void UpdateTurn ()
+    {
 		if (Vector3.Distance (location, transform.position) > 0.2f) {
 
-			transform.position += (location - transform.position).normalized * speed * Time.deltaTime;
+            transform.position += (location - transform.position).normalized * speed * Time.deltaTime;
 
-			if (Vector3.Distance (location, transform.position) <= 0.2f) {
-
+			if (Vector3.Distance (location, transform.position) <= 0.2f)
+            {
 				transform.position = location;
 				//GameManager.instance.nextTurn ();
 			}
 		}
+
+        currentPosition = location;
 
 		base.UpdateTurn ();
 	}

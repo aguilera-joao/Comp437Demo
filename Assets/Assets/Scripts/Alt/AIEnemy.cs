@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AIEnemy : Player {
-
+public class AIEnemy : Player
+{
 	// Use this for initialization
 
 	public float speed = 8.0f; 
